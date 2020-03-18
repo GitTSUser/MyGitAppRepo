@@ -27,6 +27,7 @@ public class UserController extends HttpServlet {
 
 		PrintWriter out = resp.getWriter();
 
+		System.out.println("hello");
 		resp.setContentType("text/html");
 		out.println("<html><body><b>");
 		if (users.containsKey(uname)) {
