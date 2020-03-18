@@ -26,7 +26,7 @@ public class UserController extends HttpServlet {
 		String pwd = req.getParameter("upwd");
 
 		PrintWriter out = resp.getWriter();
-
+		System.out.println("UserController.doPost()");
 		resp.setContentType("text/html");
 		out.println("<html><body><b>");
 		if (users.containsKey(uname)) {
