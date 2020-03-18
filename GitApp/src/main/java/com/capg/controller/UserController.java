@@ -20,7 +20,6 @@ public class UserController extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-		System.out.println("In servlet");
 		System.out.println("UserController.doPost()");
 		HashMap<String, String> users = dao.getUsers();
 		String uname = req.getParameter("uname");
